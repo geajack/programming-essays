@@ -1,0 +1,3 @@
+It can be an interesting exercise to try and work out the smallest subset of your language's features allow you to do all of the thing you can do with the existing set of features. This is one of the ways in which we can argue in favor of composition over inheritance: many of the things people do with inheritence can be done with composition, but not the other way around. If nothing else, this thought exercise can be a good way to reveal the [canonical purposes](canonical-purpsoes.md) of language features.
+
+It's on these grounds that I want to argue in favor of interfaces over subclasses. Interfaces and composition can accomplish everything worth doing with subclasses. As I've said before, [polymorphism is not (primarily) for code reuse](subclassing-as-code-reuse.md). 

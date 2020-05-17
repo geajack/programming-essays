@@ -8,7 +8,7 @@ This is precisely the situation in which we should *not* be subclassing. We don'
 Animal myRide = new Cat();
 ```
 
-This is not a type mismatch, since Cat is a subtype of Animal. However, the moment that `Cat` gets put inside a variable of type `Animal`, we have to treat it as if it's a `Animal`. It's still a cat, an it will still meow if we call `.speak()`, but we have to pretend we don't know what kind of an animal it is from now on. If there are Cat-specific methods like `.scratchFurniture()`, we can't use them anymore, because that's not a method of `Animal`.
+This is not a type mismatch, since Cat is a subtype of Animal. However, the moment that `Cat` gets put inside a variable of type `Animal`, we have to treat it as if it's a `Animal`. It's still a cat, and it will still meow if we call `.speak()`, but we have to pretend we don't know what kind of an animal it is from now on. If there are Cat-specific methods like `.scratchFurniture()`, we can't use them anymore, because that's not a method of `Animal`.
 
 If you are never doing this sort of thing - declaring a variable with a more general type than the type of the actual value assigned to it - you almost certainly do not need subclassing. If all your cats are declared `Cat` and all your dogs are declared `Dog`, then they probably don't need to have a common superclass. There may be a case for subclassing for the sake of [code reuse](subclassing-as-code-reuse.md), but you are definitely not doing polymorphism.
 
